@@ -32,6 +32,7 @@
 /* _____________ Your Code Here _____________ */
 
 // type MyReadonly<T> = Readonly<T>
+// PropertyKey
 type MyReadonly<T> = { readonly [P in keyof T]: T[P] }
 
 /* _____________ Test Cases _____________ */

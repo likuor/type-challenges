@@ -21,9 +21,10 @@
 */
 
 /* _____________ Your Code Here _____________ */
+// TODO
+// type First<T> = T extends [infer H extends any, ...unknown[]] ? H : never
 
-type First<T> = T extends [infer H extends any, ...unknown[]] ? H : never
-// type First<T extends any[]> = T[0]
+type First<T extends any[]> = T[0]
 
 /* _____________ Test Cases _____________ */
 import type { Equal, Expect } from '@type-challenges/utils'
