@@ -21,16 +21,16 @@
 */
 
 /* _____________ Your Code Here _____________ */
-
-type Length<T extends readonly any[]> =  T['length']
+// TODO
+type Length<T extends readonly any[]> = T['length']
 
 /* _____________ Test Cases _____________ */
 import type { Equal, Expect } from '@type-challenges/utils'
 
 const tesla = ['tesla', 'model 3', 'model X', 'model Y'] as const
-const test = [1,2,3,4] as const
-const testObj = [{name:'koki'},{name:'atys'}] as const
-const test2 = [true,false,true] as const
+const test = [1, 2, 3, 4] as const
+const testObj = [{ name: 'koki' }, { name: 'atys' }] as const
+const test2 = [true, false, true] as const
 const spaceX = ['FALCON 9', 'FALCON HEAVY', 'DRAGON', 'STARSHIP', 'HUMAN SPACEFLIGHT'] as const
 
 type cases = [
